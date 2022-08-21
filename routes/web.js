@@ -4,8 +4,13 @@ const router = express.Router();
 const usersRes = require('../responses/web/users');
 const indexRes = require('../responses/web/index');
 
-// GET Home page
+//-----------------------------------------------------------
+// Home
 router.get('/', indexRes.home);
+
+//-----------------------------------------------------------
+// Users
+router.get('/login', usersRes.loginForm)
 
 //-----------------------------------------------------------
 

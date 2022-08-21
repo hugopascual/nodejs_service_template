@@ -1,7 +1,16 @@
 // Constants declaration
 
-
 // Responses declaration that are exported
-exports.template = async (req, res) => {
+//-----------------------------------------------------------
+//
+exports.send = async (req, res) => {
   res.send('Hi!');
 };
+
+//-----------------------------------------------------------
+//
+exports.render = async (req, res) => {
+  res.render('index', { title: 'Express' });
+};
+
+//-----------------------------------------------------------

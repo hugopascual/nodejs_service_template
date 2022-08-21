@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "heroku": "git push heroku master"
+    "deploy": "git push heroku master"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
